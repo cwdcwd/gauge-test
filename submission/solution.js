@@ -25,13 +25,9 @@ function isFibonacci(x) {
 
 module.exports = {
   calculateFibonacci: (n) => {
-    return new Promise((fn) => {
-      return fn(calc(n))
-    })
+   return calc(n)
   },
   isFibonacci: (x) => {
-    return new Promise((fn) => {
-      return fn(isFibonacci(x))
-    })
+   return isFibonacci(x)
   }
 }

@@ -9,7 +9,7 @@ validate a sample set of known numbers
  |----------|-----------|
  |6         |8          |
  |10        |55         |
- |15        |55         |  #610
+ |15        |610        |  
 
 ## Check fibonacci numbers
 * validate fibonacci number
