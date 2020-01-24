@@ -12,15 +12,7 @@ function calc(n) {
 }
 
 function isFibonacci(x) {  
-  if (Number.isInteger(Math.sqrt((5 * (x * x)) - 4))) {
-    return true
-  }
-
-  if (Number.isInteger(Math.sqrt((5 * (x * x)) + 4))) {
-    return true
-  }
-
-  return false
+  return (Number.isInteger(Math.sqrt((5 * (x * x)) - 4)) || Number.isInteger(Math.sqrt((5 * (x * x)) + 4)))
 }
 
 module.exports = {
