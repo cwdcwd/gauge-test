@@ -1,13 +1,15 @@
 import math
 
 def calculateFibonacci(n):
-  print "calculating for {}".format(n)
-  return 0
+  x = n
+
+  if (n > 1):
+      x = calculateFibonacci(n - 1) + calculateFibonacci(n - 2)
+
+  return x
 
 
 def isFibonacci(x):
-  print "isFibonacci for {}".format(x)
-
   i = (math.sqrt((5 * (x * x)) - 4))
 
   if math.trunc(i) == i:
@@ -18,5 +20,4 @@ def isFibonacci(x):
   if (math.trunc(i) == i):
       return True
 
-  print "done"
   return False
